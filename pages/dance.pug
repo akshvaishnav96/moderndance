@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Dance</title>
+    <link rel="shortcut icon" href="../static/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/cssfiles/dance.css">
+    <link rel="stylesheet" href="../static/cssfiles/nav.css">
+</head>
+
+<body>
+    <nav class="flex nav-h">
+        <div class="logo rmv-logo">
+            <a href="/home"><img src="../static/images/navlgo.png" alt="" srcset=""></a>
+        </div>
+
+        <div class="nav-list v-class" id="nav-list">
+            <ul class="flex v-class ul-list">
+                <li><a href="/home">HOME</a></li>
+                <li><a href="/tranning">TRANNING</a></li>
+                <li><a href="/classes">CLASSES</a></li>
+                <li><a href="/profile">MY PROFILE</a></li>
+                <li><a href="/contact">CONTACT US</a></li>
+                <li><a href="/logout">Log Out</a></li>
+
+                
+            </ul>
+        </div>
+        <div class="burger" id="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>    
+    </nav>
+    
+    <div class="alert alert-success" role="alert" id="alert" style = "display:#{block}">Your Details has been Successfully updated your new email is your login email</div>
+    <section class="sec-1">
+        <div class="first-sec">
+            <div class="heading-main">
+                <h1>Can you feel the</h1>
+
+                <h4>MODERN DANCE VIBE</h4>
+
+                <button type="button" class="btn" id="btn">APPLY TODAY</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-2">
+        <div class="imgsec" id="img-1">
+            <h1><a href="/classes">Beginner</a></h1>
+            <span>2 COURSES</span>
+        </div>
+        <div class="imgsec" id="img-2">
+            <h1><a href="/classes">Intermediate</a></h1>
+            <span>1 COURSES</span>
+        </div>
+        <div class="imgsec" id="img-3">
+            <h1><a href="/classes">Expert</a></h1>
+            <span>4 COURSES</span>
+        </div>
+
+    </section>
+
+    <section class="cont-3">
+        <div>
+            <img src="../static/images/knowus-img.jpg" alt="" srcset="">
+        </div>
+        <div class="aboutus">
+            <h1>Find Out <br> more about us</h1>
+            <p>Dance is a performing art form consisting of sequences of movement, either improvised or purposefully selected. This movement has aesthetic and often symbolic value. Dance can be categorized and described by its choreography, by its repertoire of movements, or by its historical period or place of origin.Dance In Color’s mission is to create lasting systemic change in the performing arts. Not only by bolstering young Black dance students, but also by making sure young artists who are striving for professional dance careers receive the support they need to make sure their aspirations become their realities. At Dance In Color, we want to ensure that students are exposed to dance teachers and choreographers from a variety of racial and ethnic backgrounds. We want to hold performing art studios accountable. Ones day, we dream to expand the change we want to see beyond dance and to other forms of performing arts to create lasting change throughout the entire industry.</p>
+        </div>
+    </section>
+
+    <section class="cont-4" id="form">
+        <div class="form-main">
+            <div class="our-detail">
+                <span class="black">CONTACT US</span>
+                <h1>Request a free Quote</h1>
+                <p> Don’t miss this chance to throw your feet and hands in the air and dance like hell, come at the Modern dance we organized, and enjoy to your fullest.</p>
+                <div>
+                    <span>H.R :</span><span>0123456789</span>
+                </div>
+                <div>
+                    <span>DIRECTER :</span><span>0123456789</span>
+                </div>
+                <div>
+                    <span>COMMERCIAL :</span><span>0123456789</span>
+                </div>
+            </div>
+
+
+            <div class="form">
+                <form action="/contact" method="post" class="form-m" onsubmit="theSubmit()">
+                    <div>
+                        <input type="text" name="name" placeholder="Name">
+                        <select name="class" id="classes">
+                        <option value="SALSA">SALSA</option>
+                        <option value=" Contemporary"> Contemporary</option>
+                        <option value=" Hip Hop"> Hip Hop</option>
+                        <option value="Jazz">Jazz</option>
+                        <option value="Folk Dance">Folk Dance</option>
+                        <option value="Irish Dance">Irish Dance</option>
+                        <option value="Modern Dance" >Modern Dance</option>
+                        <option value="Swing Dance">Swing Dance</option>
+                        <option value="Class" selected>Class</option>
+                        
+                        </select>   
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control #{valid} " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder= "Email #{placeholder}" name="email">
+                        <input type="number" class="form-control" id="age" name="age" placeholder="Age max-120" onchange="agevalid()" required>
+                    </div>
+                    
+                    
+                    <div class="radiodvmain">
+                        <div class="form-check form-check-inline radiodv">
+                            <input class="form-check-input radio" type="radio" name="gender" value="male" id="inlineRadio2" required>
+                            <label class="form-check-label" for="theGender">Male</label>
+                        </div>
+                            
+                            
+                        <div class="form-check form-check-inline radiodv">
+                            <input class="form-check-input radio" type="radio" name="gender" value="female" id="inlineRadio2" required>
+                            <label class="form-check-label" for="theGender">Female</label>
+                        </div>
+                    </div>      
+                    <div class="message-div">   
+                        <textarea name="address" id="message" cols="30" rows="10" placeholder="Address" required></textarea>
+                        <button type="submit" class="bt"> SEND NOW</button>
+                    </div>    
+                </form>
+            </div>
+        </div>    
+    </section>
+    <footer>
+        <div>
+            <img src="../static/images/navlgo.png" alt="" srcset="">
+        </div>
+        <div class ="ft-logo">
+            <a href="https://www.facebook.com/ModernDanceVideos/"><img src="../static/images/facebook-round-line-icon.png" alt="" srcset=""></a>
+            <a href="https://twitter.com/hashtag/moderndance"><img src="../static/images/twitter-icon.png" alt="" srcset=""></a>
+            <a href="http://www.snapchat.com"><img src="../static/images/snapchat-round-icon.png" alt="" srcset=""></a>
+            <a href="https://www.instagram.com/explore/tags/contemporarydance/?hl=en"><img src="../static/images/instagram-round-icon.png" alt="" srcset=""></a>
+            <a href="https://www.youtube.com/watch?v=FdFsnc-8ozM"><img src="../static/images/youtube-round-icon.png" alt="" srcset=""></a>
+        </div>
+        <div class="ft-h3">
+        <h3 class="h3head">© Copyright 2016 ModernDance.com - Dance Academy </h3>
+        <h3 class="h3head">Dream Dancing World</h3>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <script src="../static/javasc/nav.js"></script> 
+    <script src="../static/javasc/agevalid.js"></script>
+    <script src="../static/javasc/dance.js"></script>
+
+</body>
+
+</html>

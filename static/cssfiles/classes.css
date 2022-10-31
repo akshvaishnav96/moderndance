@@ -1,0 +1,362 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0;
+}
+nav {
+  position: sticky;
+  top: 0;
+  background: url(../images/studiosmain_files/studio.jpg);
+  background-blend-mode: revert;
+  justify-content: space-between;
+}
+.sec-1 {
+  height: 450px;
+  width: 100%;
+  background-image: url(../images/studiosmain_files/studio.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -240px;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  justify-content: center;
+}
+.sec-1 div h1 {
+  color: white;
+  text-shadow: 5px 4px 8px #000000;
+}
+
+.fill {
+  background-image: linear-gradient(
+    0deg,
+    #e7e7ed,
+    black,
+    green,
+    black,
+    black,
+    black,
+    black
+  );
+  height: 15rem;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.fill h1 {
+  font-size: 2.5rem;
+  margin: 5px;
+  padding: 5px;
+  color: darkolivegreen;
+}
+
+.fill h4 {
+  font-size: 1.4rem;
+  color: darkgrey;
+  padding: 2px;
+}
+
+.btn {
+  height: 4rem;
+  width: 18rem;
+  margin-top: 15px;
+  background-image: linear-gradient(185deg, white, grey, black);
+  border-radius: 5px;
+  font-size: 22px;
+  cursor: pointer;
+  border: none;
+}
+
+.sec-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#imgleft {
+  top: 3rem;
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  height: 30rem;
+  padding: 10px;
+}
+.right {
+  width: 49%;
+  top: 3rem;
+  position: relative;
+}
+.right h1,
+h5 {
+  padding: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.right h1 {
+  font-weight: 100;
+}
+.right h5 {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.sidedv {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0px;
+}
+
+.sidedv h3,
+p {
+  width: fit-content;
+}
+
+.sidedv img {
+  height: 25px;
+  width: 25px;
+  filter: invert(1);
+}
+
+.sidedv img:hover {
+  filter: invert(0);
+}
+
+.sidedv h3,
+p {
+  padding: 3px;
+}
+
+.right-img-div {
+  background-color: #cf8c04;
+  border-radius: 70%;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 1.5s;
+}
+
+.right-img-div:hover {
+  transition: ease-out;
+  background-color: green;
+}
+
+.orange {
+  color: #cf8c04;
+}
+
+.green {
+  color: green;
+}
+
+.sec-3 {
+  background-color: #4e464f;
+  position: relative;
+  /* top:11.5rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  background-image: linear-gradient(208deg, white, grey, white);
+}
+
+.sec-3 h1 {
+  color: green;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+  text-shadow: 1px 1px 2px orange;
+}
+
+.sec-3 h6 {
+  color: grey;
+  text-shadow: 1px 1px 2px black;
+}
+
+.classesmain {
+  display: grid;
+  grid-template-columns: repeat(3, 40%);
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.cls {
+  margin: 0;
+  padding: 0;
+}
+
+.cls img {
+  width: 80%;
+  height: 20rem;
+  padding: 3px;
+  border: 2px solid grey;
+  border-radius: 50%;
+  margin: 10px auto;
+  display: block;
+  opacity: 1;
+  cursor: pointer;
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.cls img:hover {
+  animation: mover 0.4s 2 alternate;
+  box-shadow: -20px 20px 25px grey;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.name {
+  top: -6rem;
+  right: -8rem;
+  text-align: center;
+  width: fit-content;
+  background-color: #cf8c04;
+  padding: 10px 10px;
+  font-size: 20px;
+  margin: auto;
+  position: relative;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.name:hover {
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+}
+
+footer{
+  width: 100%;
+}
+  footer .ft-logo img {
+    width: 70px;
+}
+
+@media only screen and (max-width: 1078px) {
+  .name {
+    top: -6rem;
+    right: -7.5rem;
+  }
+
+  .classesmain{
+  grid-template-columns: repeat(3, 30%);
+
+  }
+
+  @media only screen and (max-width: 776px) {
+    .sec-1 {
+      clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 0%);
+      background-position-y: 0px;
+    }
+    .sec-1 div h1 {
+      text-align: center;
+    }
+    .fill {
+      position: relative;
+      top: 0;
+      text-align: center;
+      clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 0%);
+    }
+    .fill h1 {
+      margin: 0;
+      padding: 2px 0px;
+    }
+
+    .btn {
+      clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 0%);
+      margin: 10px 0px;
+      padding: 10px;
+      width: 55%;
+      font-size: 15px;
+    }
+
+    .sec-2 {
+      flex-direction: column;
+    }
+    #imgleft {
+      width: 90%;
+      display: block;
+      margin: 15px auto;
+      top: 0;
+    }
+    .right {
+      top: 0;
+      width: 100%;
+    }
+
+    .right h1,
+    h5 {
+      text-align: center;
+    }
+    .classesmain {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .name {
+      top: 0rem;
+      right: 0rem;
+      width: 9rem;
+      margin: 10px auto;
+    }
+    .cls img {
+      margin: auto;
+      width: 60%;
+      display: block;
+    }
+    .sec-3 h1 {
+      font-size: 3rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sec-3 h6 {
+      font-size: 1.5rem;
+    }
+    footer .ft-logo img {
+      width: 40px;
+  }
+  
+
+
+
+    @media only screen and (max-width: 296px) {
+      .sec-1 div h1 {
+        font-size: 2rem;
+      }
+      .imgN {
+        width: 50%;
+        margin: auto;
+      }
+      .sidedv {
+        flex-direction: column;
+      }
+      .sec-3 h1 {
+        font-size: 2rem;
+      }
+
+      .fill h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

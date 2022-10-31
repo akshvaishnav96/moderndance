@@ -1,0 +1,101 @@
+body{
+    background-image: url(../images/loginbg.webp);
+ 
+}
+nav{
+    background: transparent;
+}
+
+.heading-main h1 , h5,h4{
+    margin: 0;
+    padding: 20px;
+}
+
+.btn{
+    width: 6.5rem;
+    height: 2.4rem;
+    background: transparent;
+    border: none;
+    /* border-bottom: 2px solid #f00000; */
+    color: whitesmoke;
+    border-radius: 5px;
+    margin: 0px 3px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 2px 7px 25px black;
+}
+
+
+.heading-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    padding: 10px;
+    position: absolute;
+    top: 7rem;
+}
+
+.heading-main h1 {
+    color: grey;
+    font-family: 'Dancing Script', cursive;
+    font-size: 8rem;
+    font-weight: 100;
+    opacity: 40%;
+}
+
+.heading-main h4 {
+    color: whitesmoke;
+    font-size: 5rem;
+    font-weight: 100;
+    opacity: 50%;
+    position: relative;
+    left: 8rem;
+}
+
+.heading-main h5{
+    color: grey;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    font-weight: 100;
+    /* opacity: 40%; */
+    position: relative;
+    left: 6rem;
+    top: 1rem;
+}
+
+@media only screen and (max-width: 800px){
+  
+   
+    .sec-1 {
+        width: 100%;
+    }
+
+  
+
+.sec-1 h1{
+    margin-top: 4rem;
+    margin-left: 0rem;
+    padding: 5px;
+    font-size: 3.5rem
+    }
+
+    .heading-main h4 {
+        font-size: 3rem;
+        left: 1rem;
+        margin: 0;
+        padding: 0;
+    }   
+    
+    .heading-main h5 {
+        color: grey;
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+        font-weight: 100;
+        /* opacity: 40%; */
+        position: relative;
+        left: 0rem;
+        top: 0rem;
+    }
+}

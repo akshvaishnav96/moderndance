@@ -1,0 +1,98 @@
+nav{
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img{
+    width: 5rem;
+    height: 5rem;
+    filter: contrast(300%);
+    padding: 6px;
+    position: relative;
+    left: 2rem;
+}
+
+.heading {
+        text-align: center;
+        margin: 0px ;
+        padding: 0px;
+        font-weight: 900;
+        font-size: 42px;
+        color: #52382f;
+        font-style: italic;
+        text-shadow:2px 0px 2px white
+    }
+
+.mb-3{
+    width:40%;
+    margin: 0px auto;
+    color: whitesmoke;
+    margin-bottom: 0px;
+}
+
+
+
+.form-control {
+    background-color: transparent;
+    color: whitesmoke;
+    border: none;
+    border-bottom: 0.5px solid white;
+    border-radius: 0px;
+    padding: 2px;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    color:whitesmoke;
+    border: none;
+    border-bottom: 0.5px solid white;
+    border-left: 0.5px solid white;
+    box-shadow: none !important;
+}
+
+
+.form-label {
+    margin-bottom: 0.1rem;
+}
+
+
+.form-control:visited{
+    background: transparent;
+}
+
+#btn{
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    color: white;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    width: 100px;
+    height: 35px;
+}
+
+#btn:hover{
+    background-color: grey;
+    color: black;
+}
+
+button:hover{
+    color: whitesmoke !important;
+    box-shadow: 1px 1px 2px white;
+}
+
+
+
+
+body{
+    background-image: url(../images/loginbg.webp);
+}
+
+#mobile::-webkit-outer-spin-button,
+#mobile::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
